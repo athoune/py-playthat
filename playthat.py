@@ -15,7 +15,7 @@ class VLC(object):
         self.host = host
 
     def play(self, url):
-        return urllib.urlopen('http://%s:8080/requests/status.xml?command=in_play&input=%s&option=noaudio' % (self.host, urllib.quote(url)))
+        return urllib.urlopen('http://%s:8080/requests/status.xml?command=in_play&input=%s&option=novideo' % (self.host, urllib.quote(url)))
 
 
 def webserver(conn):
